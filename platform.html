@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Platform - MetalsBridge</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* Same CSS as about.html */
+  /* Copy the entire CSS from about.html or index.html */
+  body, h1, h2, p, ul, li, nav, header, footer, section, main {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    background: #fff;
+    color: #222;
+    line-height: 1.6;
+  }
+  a {
+    color: #5A87C3;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  ul {
+    list-style: none;
+  }
+  header {
+    position: relative;
+    height: 150px;
+  }
+  .logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    background: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+  }
+  .logo img {
+    height: 130px;
+  }
+  .nav-container {
+    max-width: 1100px;
+    margin-left: 180px;
+    padding: 0 1rem;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+  nav ul li {
+    font-weight: 600;
+  }
+  nav ul li a.active {
+    font-weight: 700;
+    border-bottom: 3px solid #5A87C3;
+    padding-bottom: 4px;
+  }
+  main.content {
+    max-width: 900px;
+    margin: 2rem auto 4rem auto;
+    padding: 0 1rem;
+    color: #1D2B5A;
+  }
+  main.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  main.content img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+  }
+  main.content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  footer {
+    background: #5A87C3;
+    color: white;
+    padding: 1rem 0.5rem;
+  }
+  footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  footer .tagline {
+    font-weight: 600;
+  }
+  footer .social-icons a {
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+  }
+  footer .social-icons a:hover {
+    color: #d1e0ff;
+  }
+  @media (max-width: 768px) {
+    .nav-container {
+      margin-left: 0;
+      justify-content: center;
+      height: auto;
+      padding: 1rem;
+    }
+    .logo {
+      position: static;
+      height: auto;
+      padding: 0;
+      margin-bottom: 1rem;
+      justify-content: flex-start;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="metalsbridge-logo.png" alt="MetalsBridge Logo" />
+  </div>
+  <div class="nav-container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bridge-group.html">Bridge Group</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="platform.html" class="active">Platform</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="content">
+  <h1>Platform</h1>
+  <img src="computers2.png" alt="Platform Overview" style= "width:500px; height:auto"/>
+  <p>The MetalsBridge platform integrates advanced technology with industry expertise to provide real-time tracking, inventory management, and analytics for the metals supply chain.</p>
+  <p>Designed to be user-friendly and customizable, the platform supports seamless collaboration between manufacturers, distributors, and end users.</p>
+  <p>With predictive analytics, automated alerts, and comprehensive reporting, MetalsBridge helps your business optimize operations and reduce costs.</p>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="tagline">“Efficiency through Optimization”</div>
+    <div class="social-icons" aria-label="Social Media Links">
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" aria-label="X (formerly Twitter)"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

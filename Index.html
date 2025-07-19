@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MetalsBridge</title>
+<!-- Montserrat font from Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  body, h1, h2, p, ul, li, nav, header, footer, section {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    background: #fff;
+    color: #222;
+    line-height: 1.6;
+  }
+  a {
+    color: #5A87C3;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  ul {
+    list-style: none;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  header .logo img {
+    height: 150px; /* increased from 50px */
+  }
+  header nav ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+  header nav ul li {
+    font-weight: 600;
+  }
+  /* Hero */
+  .hero {
+    background: url('futuristic-coils.jpg') center/cover no-repeat;
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(29, 43, 90, 0.6);
+    z-index: 0;
+  }
+  /* New description section */
+  .description {
+    background: #f0f4f8;
+    padding: 2.5rem 0;
+    color: #1D2B5A;
+  }
+  .description h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .description p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+  }
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .hero-content button {
+    background: #5A87C3;
+    border: none;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  .hero-content button:hover {
+    background: #3d5a8e;
+  }
+  /* Features */
+  .features {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 0 4rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .feature {
+    flex: 1 1 250px;
+    background: #f8f9fb;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+    text-align: center;
+  }
+  .feature img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  .feature h3 {
+    margin-bottom: 0.75rem;
+    color: #1D2B5A;
+  }
+  .feature p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  /* Footer */
+  footer {
+    background: #5A87C3;
+    color: white;
+    padding: 1rem 0.5rem;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  footer .tagline {
+    font-weight: 600;
+  }
+  footer .social-icons a {
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+  }
+  footer .social-icons a:hover {
+    color: #d1e0ff;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    header nav ul {
+      gap: 1rem;
+    }
+  }
+</style>
+<!-- Font Awesome CDN for social icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+<header class="container">
+  <div class="logo">
+    <img src="metalsbridge-logo.png" alt="MetalsBridge Logo" />
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="bridge-group.html">Bridge Group</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="platform.html">Platform</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Efficient Metals Supply Chain Solutions</h2>
+    <button>Request a Demo</button>
+  </div>
+</section>
+
+<section class="description">
+  <div class="container">
+    <h3></h3>
+    <p>
+      MetalsBridge is a technology company providing the international metals and manufacturing industries with off-balance-sheet financed, single-vendor invoicing of procurement, value-add, supply chain management, administrative and working capital services.
+    </p>
+  </div>
+</section>
+
+<section class="container features" aria-label="Features">
+  <article class="feature">
+    <img src="lots-of-coils.jpg" alt="Warehouse Image" />
+    <h3>Warehouse Management</h3>
+    <p>Optimize inventory and streamline metal warehousing with real-time tracking and reporting tools.</p>
+  </article>
+  <article class="feature">
+    <img src="Coils-on-truck.png" alt="Transportation Image" />
+    <h3>Transportation Logistics</h3>
+    <p>Manage and monitor metal shipments with transparent, flexible transportation solutions.</p>
+  </article>
+  <article class="feature">
+    <img src="analytics.png" alt="Data Analytics Image" />
+    <h3>Data Analytics</h3>
+    <p>Gain insights into your metals supply chain with powerful analytics and predictive tools.</p>
+  </article>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="tagline">“Efficiency through Optimization”</div>
+    <div class="social-icons" aria-label="Social Media Links">
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" aria-label="X (formerly Twitter)"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
